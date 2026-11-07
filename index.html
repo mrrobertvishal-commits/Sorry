@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#e8f3ff" />
+  <title>A Little Note for Madam 💙</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="screen active" id="welcome">
+      <p class="eyebrow">a little something, made with care</p>
+      <h1>For <em>Madam</em></h1>
+      <p class="subtext">I have something to tell you…</p>
+      <button class="envelope-wrap" id="openLetter" aria-label="Open the letter">
+        <span class="envelope">
+          <span class="letter-peek">For you ♡</span>
+          <span class="flap"></span>
+          <span class="seal">♥</span>
+        </span>
+      </button>
+      <p class="hint">tap the envelope to open</p>
+    </section>
+
+    <section class="screen" id="sorry">
+      <div class="bear" aria-hidden="true">🧸</div>
+      <p class="eyebrow">from the bottom of my heart</p>
+      <h2>I'm so sorry,<br><em>Madam.</em></h2>
+      <p class="message">I know I may have upset you, and that was never what I wanted. You matter to me, and I genuinely wish I could take back the moment that hurt you. I hope you can find it in your heart to forgive me. 💙</p>
+      <button class="primary" id="toMeter">Continue <span>♡</span></button>
+      <p class="tiny-note">No pressure. Just a little message from me.</p>
+    </section>
+
+    <section class="screen" id="meter">
+      <div class="bear small" aria-hidden="true">🧸</div>
+      <p class="eyebrow">be honest with me</p>
+      <h2>How sorry am I?<br><em>Let's measure.</em></h2>
+      <div class="meter-card">
+        <div class="meter-value"><span id="meterNumber">100</span><small>%</small></div>
+        <input type="range" id="sorryRange" min="0" max="100" value="100" />
+        <div class="range-labels"><span>Not enough</span><span>More than words</span></div>
+      </div>
+      <p class="meter-caption" id="meterCaption">My apologies are bigger than this little slider. 🥺</p>
+      <button class="primary" id="toMemories">One more thing <span>♡</span></button>
+    </section>
+
+    <section class="screen" id="memories">
+      <p class="eyebrow">our little good mornings &amp; good nights</p>
+      <h2>I miss <em>this.</em></h2>
+      <p class="swipe-hint">swipe through ›</p>
+      <div class="gallery" id="gallery">
+        <figure><img src="images/chat6.jpg" alt="Chat screenshot" loading="lazy"></figure>
+        <figure><img src="images/chat7.jpg" alt="Chat screenshot" loading="lazy"></figure>
+        <figure><img src="images/chat2.jpg" alt="Chat screenshot" loading="lazy"></figure>
+        <figure><img src="images/chat1.jpg" alt="Chat screenshot" loading="lazy"></figure>
+        <figure><img src="images/chat3.jpg" alt="Chat screenshot" loading="lazy"></figure>
+        <figure><img src="images/chat4.jpg" alt="Chat screenshot" loading="lazy"></figure>
+        <figure><img src="images/chat5.jpg" alt="Chat screenshot" loading="lazy"></figure>
+      </div>
+      <div class="dots" id="dots" aria-hidden="true"></div>
+
+      <div class="letter">
+        <p>Your simple good morning and good night messages, your response to them, makes everything more beautiful. The updates you give, and the amount you care for me even though we are in a fight…</p>
+        <p>The simple word <strong>“SIR”</strong> in that good morning is so nice, and now you are not saying it, and I miss that. Without it, I feel like you are saying it to someone else…</p>
+        <p class="plea">Please, I made a mistake. Please forgive me… it won't repeat hereafter, and I will not ask about you with anyone else. If I need to know something, I will ask you directly.</p>
+        <p>Please talk to me like before. The good morning message like the first one, please Madam… I won't break your trust hereafter. I know I made a mistake. Please don't treat me like this, it hurts a lot.</p>
+        <p class="tanglish">Ni ipadi panra nala hurt tha aguthu. Unna disturb panreno nu thonuthu. Please Madam, munadi mari iru.</p>
+        <p class="knees">“Un kal la viluren, please…” 💛</p>
+      </div>
+      <button class="primary" id="toForgive">Please read my heart <span>♡</span></button>
+    </section>
+
+    <section class="screen" id="forgive">
+      <div class="bear" aria-hidden="true">🧸</div>
+      <p class="eyebrow">one tiny question</p>
+      <h2>Will you forgive me, Madam? <span class="inline-heart">🥺</span></h2>
+      <p class="message short">I'll understand if you need time. But a little forgiveness would mean the world to me.</p>
+      <div class="buttons">
+        <button class="primary yes" id="yesBtn">Yes, I forgive you 💙</button>
+        <button class="no" id="noBtn">Not yet</button>
+      </div>
+      <p class="tiny-note" id="noNote">The choice is always yours. 💛</p>
+    </section>
+
+    <section class="screen final-screen" id="final">
+      <div class="bear big" aria-hidden="true">🧸</div>
+      <div class="heart-rain" aria-hidden="true">♥　♡　♥　♡　♥</div>
+      <p class="eyebrow">you just made my day</p>
+      <h2>Yay! Forgiven. 💙</h2>
+      <h3><em>Best Person Ever.</em></h3>
+      <p class="message">Thank you, Madam. I promise to be more thoughtful and to show you through my actions, not just my words. Sending you the biggest virtual hug! 🫂</p>
+      <div class="promise">A little promise: I'll try to do better, every day. ♡</div>
+      <button class="primary" id="replay">Read it again ↻</button>
+    </section>
+  </main>
+  <footer>made with a little courage &amp; lots of care <span>♡</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
